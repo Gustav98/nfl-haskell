@@ -6,8 +6,15 @@
 module Handler.Home where
 
 import Import
-import Network.HTTP.Types.Status
+
 import Database.Persist.Postgresql
 
 getHomeR :: Handler Html
-getHomeR = undefined
+getHomeR = do
+    defaultLayout $ do 
+        addStylesheet $ StaticR css_style_css
+        addStylesheet $ StaticR css_bootstrap_css
+        addStylesheetRemote "https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        $(whamletFile "templates/home.hamlet")
+        
+        

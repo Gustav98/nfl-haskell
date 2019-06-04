@@ -1,0 +1,53 @@
+.nav-item {
+    font-family: Century Gothic;
+    margin: 0 auto;
+    padding: 20px;
+}
+.nav-item a {
+    color: #ccc !important;
+    text-decoration: none;
+    font: 20px Century Gothic;
+    margin: 0px 4px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.nav-item a:hover{
+    color: #FFF !important;
+}
+
+.logo-nav{
+    width: 50% !important;
+}
+
+nav{
+    border-bottom: 4px solid #B8860B;
+}
+
+/* Top & Bottom Borders Out */
+.topBotomBordersOut a:before, .topBotomBordersOut a:after {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content:"";
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.topBotomBordersOut a:before {
+    top: 0px;
+    transform: translateY(10px);
+}
+.topBotomBordersOut a:after {
+    bottom: 0px;
+    transform: translateY(-10px);
+}
+.topBotomBordersOut a:hover:before, .topBotomBordersOut a:hover:after {
+    opacity: 1;
+    transform: translateY(0px);
+}
