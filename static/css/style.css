@@ -226,3 +226,104 @@ footer a{
     ul li {display: block;text-align: center;}
     .active {display: block;}
   }
+  
+  
+  
+/*PÁGINA REGISTRO*/
+body {
+    background-image: url('https://thewallpaper.co//wp-content/uploads/2016/10/sport-nfl-wallpapers-hd.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}    
+
+.login-container {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/*Inicio Imagem de centro*/
+.login-logo{
+    position: relative;
+    margin-left: -41.5%;
+}
+.login-logo img{
+    position: absolute;
+    width: 20%;
+    margin-top: 19%;
+    background: #013369;
+    border-radius: 50%;
+    padding: 2%;
+    
+}
+/*Fim Imagem de centro*/
+
+/*Inicio Formulario Login*/
+.login-form-1 {
+    padding: 10% !important;
+    background: #013369;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0.95;
+}
+
+.login-form-1:hover{
+    opacity: 1;
+}
+
+.login-form-1 h3 {
+    text-align: center;
+    margin-bottom: 12%;
+    color: #fff;
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-size: 2.5em;
+    line-height: 63px;
+}
+/*Fim Formulario Login*/
+
+/*Inicio Formulario Cadastro*/
+.cadastro-form-2 {
+    padding: 9.3% !important;
+    opacity: 0.95;
+    background-color: #808080;
+    box-shadow: 0 25px 18px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cadastro-form-2:hover{
+    opacity: 1;
+}
+
+.cadastro-form-2 h3 {
+    text-align: center;
+    margin-bottom: 12%;
+    color: #fff;
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-size: 2.3em;
+    line-height: 63px;
+}
+/*Fim Formulario Cadastro*/
+
+/*BOTÕES ENVIAR*/
+.btnSubmit {
+    font-weight: 600;
+    width: 50%;
+    color: #282726;
+    background-color: #fff;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+}
+
+/*BOTÕES ESQUECEU SUA SENHA*/
+.btnForgetPwd {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btnForgetPwd:hover {
+    text-decoration: none;
+    color: #fff;
+}
