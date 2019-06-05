@@ -4,15 +4,15 @@
 {-# LANGUAGE MultiParamTypeClasses #-}
 {-# LANGUAGE TypeFamilies #-}
 {-# LANGUAGE QuasiQuotes #-}
-module Handler.Login where
+module Handler.Cadastro where
 
 import Import
 import Database.Persist.Postgresql
 
-formCadastro :: Form (Text,Text)
-formCadastro = renderBootstrap $ (,) 
+formCadastro :: Form (Text,Text, Text)
+formCadastro = renderBootstrap $ (,,) 
     <$> areq textField "Nome: " Nothing
-    <$> areq emailField "E-mail: " Nothing
+    <*> areq emailField "E-mail: " Nothing
     <*> areq passwordField "Senha: " Nothing
 
 
@@ -36,7 +36,7 @@ postCadastroR :: Handler Html
 postCadastroR = do 
     ((res,_),_) <- runFormPost formCadastro
     case res of 
-        FormSuccess (email,senha) -> do 
+        FormSuccess (nome,email,senha) -> do 
             usu <- runDB $ getBy (UniqueEmail email)
             case usu of
                 Just (Entity _ usuario) -> do 
@@ -50,8 +50,3 @@ postCadastroR = do
                     setMessage [shamlet| E-mail inexistente |]
                     redirect RegistroR
         _ -> redirect RegistroR
-
-postLogoutR :: Handler Html
-postLogoutR = do 
-    deleteSession "_ID"
-    redirect HomeR

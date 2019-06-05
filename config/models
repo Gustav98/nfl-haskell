@@ -1,0 +1,22 @@
+Usuario
+    nome Text
+    email Text 
+    senha Text
+    UniqueEmail email
+    
+Time
+    nome Text
+    
+Jogo
+    timea TimeId
+    timeb TimeId
+    pta  Int
+    ptb  Int
+    dia Day
+    estadio Text
+    
+Palpite
+    jogoid JogoId
+    usuario UsuarioId
+    vencedor TimeId
+    difpt Int
