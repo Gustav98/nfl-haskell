@@ -11,24 +11,31 @@ import Database.Persist.Postgresql
 
 formCadastro :: Form (Text,Text, Text)
 formCadastro = renderBootstrap $ (,,) 
-    <$> areq textField "Nome: " Nothing
-    <*> areq emailField "E-mail: " Nothing
-    <*> areq passwordField "Senha: " Nothing
+    <$> areq textField (FieldSettings{
+        fsLabel = "Nome: ",	 
+        fsTooltip = Nothing, 
+        fsId = Nothing,	 
+        fsName = Nothing,	 
+        fsAttrs = [("class", "form-control")]
+        
+        }) Nothing
+    <*> areq emailField (FieldSettings{
+        fsLabel = "Email: ",	 
+        fsTooltip = Nothing, 
+        fsId = Nothing,	 
+        fsName = Nothing,	 
+        fsAttrs = [("class", "form-control")]
+        
+        }) Nothing
+    <*> areq passwordField (FieldSettings{
+        fsLabel = "Senha: ",	 
+        fsTooltip = Nothing, 
+        fsId = Nothing,	 
+        fsName = Nothing,	 
+        fsAttrs = [("class", "form-control")]
+        
+        }) Nothing
 
-
-getCadastroR :: Handler Html
-getCadastroR = do
-    msg <- getMessage
-    (widget,enctype) <- generateFormPost formCadastro
-    defaultLayout $ do
-        addStylesheet $ StaticR css_bootstrap_css
-        [whamlet|
-            $maybe mensagem <- msg
-                ^{mensagem}
-            <form action=@{CadastroR} method=post enctype=#{enctype}>
-                ^{widget}
-                <input type="submit" value="Cadastro">
-        |]
 
 -- Autenticacao
 -- Entity id tabela -> Representa um registro vindo do BD

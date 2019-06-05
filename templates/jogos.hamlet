@@ -14,6 +14,7 @@
                     <a .nav-link href=@{RegistroR}>Cadastro/Login
 
 
+
 <main>
     <section .listar-tabela>
         <div .container>
@@ -35,3 +36,23 @@
                                     Pontos
                                 <th .text-center> 
                                     Time 2
+                    
+                        <tbody class="tabela">
+                            $forall (Entity jogoId jogo) <- jogo
+                                <tr>
+                                    <td>
+                                        #{jogoData jogo}
+                                    <td>
+                                        #{jogoEstadio jogo}
+                                    <td>
+                                        #{jogoTimea jogo}
+                                    <td>
+                                        #{jogoPta jogo}
+                                    <td>
+                                        #{jogoTimeb jogo}
+                                    <td>
+                                        #{jogoPta jogo}
+                                    
+                                    
+                                        <form action=@{PalpiteR jogoId} method="POST">
+                                            <button .btn> FAZER PALPITE

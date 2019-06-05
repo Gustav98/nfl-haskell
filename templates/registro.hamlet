@@ -21,19 +21,15 @@
             <div .col-md-6 .login-form-1>
                         
                 <h3>Login
+                <form action=@{LoginR} method="POST" enctype=#{enctypeLogin}>
+                    ^{widgetLogin}
+                    
+                    <div .form-group>
+                        <input type="submit" .btnSubmit value="Login">
                         
-                <div .form-group>
-                    <input type="text" .form-control placeholder="Seu Email *" value="">
-                    
-                <div .form-group>
-                    <input type="password" .form-control placeholder="Sua Senha *" value="">
-                    
-                <div .form-group>
-                    <input type="submit" .btnSubmit value="Login">
-                    
-                <div .form-group>
-                    <a href="#" .btnForgetPwd>
-                        Esqueceu sua Senha?
+                    <div .form-group>
+                        <a href="#" .btnForgetPwd>
+                            Esqueceu sua Senha?
                         
             <!--INÍCIO ABA CADASTRO-->
             <div .col-md-6 .cadastro-form-2>
@@ -42,16 +38,10 @@
                         <img src=@{StaticR imgs_logoNfl_png}>
                         
                 <h3>Cadastrar
+                <form action=@{CadastroR} method="POST" enctype=#{enctype}>
+                    ^{widget}
                 
-                <div .form-group>
-                    <input type="text" .form-control placeholder="Seu Email *" value="">
                 
-                <div .form-group>
-                    <input type="password" .form-control placeholder="Sua Senha *" value="">
-                
-                <div .form-group>
-                    <input type="password" .form-control placeholder="Confirme Sua Senha *" value="">
-                
-                <div .form-group>
-                    <input type="submit" .btnSubmit value="Cadastre-se">
+                    <div .form-group>
+                        <input type="submit" .btnSubmit value="Cadastre-se">
      

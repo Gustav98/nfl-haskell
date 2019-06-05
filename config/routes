@@ -7,7 +7,7 @@
 
 /registro      RegistroR        GET
 
-/login         LoginR           GET POST
+/login         LoginR        POST
 /logout        LogoutR          POST
 
-/cadastro      CadastroR        GET POST
+/cadastro      CadastroR     POST

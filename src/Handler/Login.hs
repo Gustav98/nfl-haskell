@@ -11,22 +11,22 @@ import Database.Persist.Postgresql
 
 formLogin :: Form (Text,Text)
 formLogin = renderBootstrap $ (,) 
-    <$> areq emailField "E-mail: " Nothing
-    <*> areq passwordField "Senha: " Nothing
-
-getLoginR :: Handler Html
-getLoginR = do
-    msg <- getMessage
-    (widget,enctype) <- generateFormPost formLogin
-    defaultLayout $ do
-        addStylesheet $ StaticR css_bootstrap_css
-        [whamlet|
-            $maybe mensagem <- msg
-                ^{mensagem}
-            <form action=@{LoginR} method=post enctype=#{enctype}>
-                ^{widget}
-                <input type="submit" value="Log in">
-        |]
+    <$> areq emailField (FieldSettings{
+        fsLabel = "Email: ",	 
+        fsTooltip = Nothing, 
+        fsId = Nothing,	 
+        fsName = Nothing,	 
+        fsAttrs = [("class", "form-control")]
+        
+        }) Nothing
+    <*> areq passwordField (FieldSettings{
+        fsLabel = "Senha: ",	 
+        fsTooltip = Nothing, 
+        fsId = Nothing,	 
+        fsName = Nothing,	 
+        fsAttrs = [("class", "form-control")]
+        
+        }) Nothing
 
 -- Autenticacao
 -- Entity id tabela -> Representa um registro vindo do BD
