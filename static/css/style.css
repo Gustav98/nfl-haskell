@@ -4,6 +4,7 @@
     font-family: Century Gothic;
     margin: 0 auto;
     padding: 20px;
+    list-style: none;
 }
 .nav-item a {
     color: #ccc !important;
@@ -230,7 +231,7 @@ footer a{
   
   
 /*PÁGINA REGISTRO*/
-body {
+.registrobg {
     background-image: url('https://thewallpaper.co//wp-content/uploads/2016/10/sport-nfl-wallpapers-hd.jpg');
     background-size: cover;
     background-repeat: no-repeat;

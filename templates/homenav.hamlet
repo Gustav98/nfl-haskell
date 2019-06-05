@@ -1,13 +1,14 @@
-<nav .menu .navbar .navbar-light .navbar-expand-md .justify-content-center .bg-dark .fixed-top>
+<nav .menum .navbar .navbar-light .navbar-expand-md .justify-content-center .bg-dark .fixed-top>
     <div .container>
-        <a href="#">
-            <img src=@{StaticR imgs_logoNflPalpite_png} .img-responsive .logo-nav alt="">
-        <div .navbar-collapse .collapse .justify-content-between .align-items-center w-100 #collapsingNavbar2>
+        <div .navbar-collapse .collapse .justify-content-between .align-items-center .w-100 #collapsingNavbar2>
             <ul .topBotomBordersOut .navbar-nav .mx-auto .text-center>
+                <li .nav-item>
+                    <img src=@{StaticR imgs_logoNflPalpite_png} .img-responsive .logo-nav alt="">
                 <li .nav-item .active>
-                    <a .nav-link href="#">Home
-                <li .nav-item><a .nav-link href="#">Jogos
-                <li .nav-item> <a .nav-link href="#">Palpites
-                <li .nav-item> <a .nav-link href="#">Cadastre-se
-                <li .nav-item> <a .nav-link href="#">Login
-      
+                    <a .nav-link href=@{HomeR}>Home
+                <li .nav-item>
+                    <a .nav-link href=@{JogosR}>Jogos
+                <li .nav-item>
+                    <a .nav-link href=@{PalpiteR}>Palpites
+                <li .nav-item> 
+                    <a .nav-link href=@{RegistroR}>Cadastro/Login

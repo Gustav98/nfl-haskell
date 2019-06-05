@@ -1,4 +1,17 @@
-
+<nav .menum .navbar .navbar-light .navbar-expand-md .justify-content-center .bg-dark .fixed-top>
+    <div .container>
+        <div .navbar-collapse .collapse .justify-content-between .align-items-center .w-100 #collapsingNavbar2>
+            <ul .topBotomBordersOut .navbar-nav .mx-auto .text-center>
+                <li .nav-item>
+                    <img src=@{StaticR imgs_logoNflPalpite_png} .img-responsive .logo-nav alt="">
+                <li .nav-item .active>
+                    <a .nav-link href=@{HomeR}>Home
+                <li .nav-item>
+                    <a .nav-link href="">Jogos
+                <li .nav-item>
+                    <a .nav-link href="">Palpites
+                <li .nav-item> 
+                    <a .nav-link href=@{RegistroR}>Cadastro/Login
 
 <div .col-lg-12>
     <img src=@{StaticR imgs_banner_png} .img-responsive .banner>

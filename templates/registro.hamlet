@@ -1,42 +1,57 @@
+<nav .menum .navbar .navbar-light .navbar-expand-md .justify-content-center .bg-dark .fixed-top>
+    <div .container>
+        <div .navbar-collapse .collapse .justify-content-between .align-items-center .w-100 #collapsingNavbar2>
+            <ul .topBotomBordersOut .navbar-nav .mx-auto .text-center>
+                <li .nav-item>
+                    <img src=@{StaticR imgs_logoNflPalpite_png} .img-responsive .logo-nav alt="">
+                <li .nav-item .active>
+                    <a .nav-link href=@{HomeR}>Home
+                <li .nav-item>
+                    <a .nav-link href="">Jogos
+                <li .nav-item>
+                    <a .nav-link href="">Palpites
+                <li .nav-item> 
+                    <a .nav-link href=@{RegistroR}>Cadastro/Login
 
-<div .container .login-container>
-    <div .row>
-        
-        <!--INÍCIO ABA LOGIN-->
-        <div .col-md-6 .login-form-1>
+<main .registrobg>
+    <div .container .login-container>
+        <div .row>
+            
+            <!--INÍCIO ABA LOGIN-->
+            <div .col-md-6 .login-form-1>
+                        
+                <h3>Login
+                        
+                <div .form-group>
+                    <input type="text" .form-control placeholder="Seu Email *" value="">
                     
-            <h3>Login
+                <div .form-group>
+                    <input type="password" .form-control placeholder="Sua Senha *" value="">
                     
-            <div .form-group>
-                <input type="text" .form-control placeholder="Seu Email *" value="">
+                <div .form-group>
+                    <input type="submit" .btnSubmit value="Login">
+                    
+                <div .form-group>
+                    <a href="#" .btnForgetPwd>
+                        Esqueceu sua Senha?
+                        
+            <!--INÍCIO ABA CADASTRO-->
+            <div .col-md-6 .cadastro-form-2>
+                <div .login-logo>
+                    <a href="#">
+                        <img src=@{StaticR imgs_logoNfl_png}>
+                        
+                <h3>Cadastrar
                 
-            <div .form-group>
-                <input type="password" .form-control placeholder="Sua Senha *" value="">
+                <div .form-group>
+                    <input type="text" .form-control placeholder="Seu Email *" value="">
                 
-            <div .form-group>
-                <input type="submit" .btnSubmit value="Login">
+                <div .form-group>
+                    <input type="password" .form-control placeholder="Sua Senha *" value="">
                 
-            <div .form-group>
-                <a href="#" .btnForgetPwd>
-                    Esqueceu sua Senha?
-                    
-        <!--INÍCIO ABA CADASTRO-->
-        <div .col-md-6 .cadastro-form-2>
-            <div .login-logo>
-                <a href="#">
-                    <img src=@{StaticR imgs_logoNfl_png}>
-                    
-            <h3>Cadastrar
-            
-            <div .form-group>
-                <input type="text" .form-control placeholder="Seu Email *" value="">
-            
-            <div .form-group>
-                <input type="password" .form-control placeholder="Sua Senha *" value="">
-            
-            <div .form-group>
-                <input type="password" .form-control placeholder="Confirme Sua Senha *" value="">
-            
-            <div .form-group>
-                <input type="submit" .btnSubmit value="Cadastre-se">
- 
+                <div .form-group>
+                    <input type="password" .form-control placeholder="Confirme Sua Senha *" value="">
+                
+                <div .form-group>
+                    <input type="submit" .btnSubmit value="Cadastre-se">
+     
