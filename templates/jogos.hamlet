@@ -38,21 +38,21 @@
                                     Time 2
                     
                         <tbody class="tabela">
-                            $forall (Entity jogoId jogo) <- jogo
+                            $forall ((Entity jogoId jogo), timea, timeb) <- jt
                                 <tr>
                                     <td>
-                                        #{jogoData jogo}
+                                        #{show $ jogoDia jogo}
                                     <td>
                                         #{jogoEstadio jogo}
                                     <td>
-                                        #{jogoTimea jogo}
+                                        #{timea}
                                     <td>
                                         #{jogoPta jogo}
                                     <td>
-                                        #{jogoTimeb jogo}
+                                        #{timeb}
                                     <td>
-                                        #{jogoPta jogo}
+                                        #{jogoPtb jogo}
                                     
                                     
-                                        <form action=@{PalpiteR jogoId} method="POST">
+                                        <form action="" method="POST">
                                             <button .btn> FAZER PALPITE

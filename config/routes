@@ -11,3 +11,5 @@
 /logout        LogoutR          POST
 
 /cadastro      CadastroR     POST
+
+/jogo       ListarJogosR      GET
