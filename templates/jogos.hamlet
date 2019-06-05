@@ -1,0 +1,37 @@
+<nav .menum .navbar .navbar-light .navbar-expand-md .justify-content-center .bg-dark .fixed-top>
+    <div .container>
+        <div .navbar-collapse .collapse .justify-content-between .align-items-center .w-100 #collapsingNavbar2>
+            <ul .topBotomBordersOut .navbar-nav .mx-auto .text-center>
+                <li .nav-item>
+                    <img src=@{StaticR imgs_logoNflPalpite_png} .img-responsive .logo-nav alt="">
+                <li .nav-item .active>
+                    <a .nav-link href=@{HomeR}>Home
+                <li .nav-item>
+                    <a .nav-link href="">Jogos
+                <li .nav-item>
+                    <a .nav-link href="">Palpites
+                <li .nav-item> 
+                    <a .nav-link href=@{RegistroR}>Cadastro/Login
+
+
+<main>
+    <section .listar-tabela>
+        <div .container>
+            <div .row>
+                <div .col-lg-12 .col-md-12 .col-sm-12 .col-xs-12>
+                    <h2 .text-center .title>Jogos NFL 100
+                    <table class="table-stripped">
+                        <thead>
+                            <tr>
+                                <th .text-center>
+                                    Data 
+                                <th .text-center>
+                                    Estádio
+                                <th .text-center>
+                                    Time 1
+                                <th .text-center>
+                                    Pontos
+                                <th .text-center>
+                                    Pontos
+                                <th .text-center> 
+                                    Time 2

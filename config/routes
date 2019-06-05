@@ -5,5 +5,9 @@
 
 / HomeR GET
 
-/registro      RegistroR       GET
+/registro      RegistroR        GET
 
+/login         LoginR           GET POST
+/logout        LogoutR          POST
+
+/cadastro      CadastroR        GET POST
